@@ -1,6 +1,7 @@
 import React from "react";
 import { NewRoomForm} from './NewRoomForm';
 import { NewHouseForm } from "./NewHouseForm";
+import NavBar from "./Navbar";
 
 
 export const House = (props) => {
@@ -33,6 +34,7 @@ export const House = (props) => {
      
     return (
         <div>
+            <NavBar />
             <h1>{house.name}</h1> 
             {
                 rooms({rooms, houseId: house._id, deleteRoom})
