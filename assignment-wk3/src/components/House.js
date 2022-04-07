@@ -34,7 +34,7 @@ export const House = (props) => {
      
     return (
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
             <h1>{house.name}</h1> 
             {
                 rooms({rooms, houseId: house._id, deleteRoom})
